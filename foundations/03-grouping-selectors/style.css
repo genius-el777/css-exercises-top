@@ -1,0 +1,14 @@
+.title,
+.subsection{
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+.title{
+    background-color: black;
+    color: white;
+}
+
+.subsection{
+    background-color: yellow;
+}
