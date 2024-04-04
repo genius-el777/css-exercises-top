@@ -5,10 +5,96 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+/* All the links css code were shortened into the ul selector below.
+.header .left-links {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin: 2px 5px 2px 1px;
+}
+
+.header .right-links {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin: 2px 1px 2px 5px;
+}
+*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #eeeeee;
+  margin-top: 100px;
+}
+/*
+.footer .left-links {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin: 2px 5px 2px 1px;;
+}
+
+.footer .right-links {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin: 16px;
+} */
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
+}
+
+/* Positioning the logo, input and buttons were better powitioned with the flex: 1.
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 200px 2px 200px 2px;
+} */
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 img {
   width: 600px;
+  /*margin: auto;*/
 }
 
 button {
@@ -16,6 +102,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 16px;
 }
 
 input {
@@ -24,4 +111,9 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
 }
